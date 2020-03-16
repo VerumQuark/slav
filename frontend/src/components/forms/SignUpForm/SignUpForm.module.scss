@@ -1,0 +1,45 @@
+@import "../../variables";
+
+.form {
+  min-width: 525px;
+  max-width: 525px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.fieldWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 11.5px;
+}
+
+.errorWrapper {
+  margin-top: 16.5px;
+  min-width: 245px;
+  max-width: 245px;
+  text-align: left;
+}
+
+button.submitButton {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #28D2D0;
+  font-size: 16px;
+  border-radius: $border-radius;
+
+  &:focus{
+    outline: white solid 1px;
+    outline-offset: -4px;
+  }
+}
+
+.input{
+  min-width: 215px;
+  max-width: 215px;
+}
+
+.fieldWrapper:nth-child(odd){
+  margin-right: 35px;
+}
